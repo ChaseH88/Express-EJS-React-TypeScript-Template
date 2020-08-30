@@ -34,6 +34,7 @@ const rollupConfig = [
         'process.env.NODE_ENV': JSON.stringify( 'production' )
       }),
       babel({
+        babelHelpers: 'runtime',
         presets: [
           'react-app',
         ],

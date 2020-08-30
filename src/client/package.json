@@ -6,7 +6,7 @@
   "scripts": {
     "start": "SET NODE_ENV=production rollup --config rollup.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "SET NODE_ENV=development rollup --config rollup.config.js"
+    "dev": "cross-env NODE_ENV=development rollup --config rollup.config.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,7 @@
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@rollup/plugin-replace": "^2.3.3",
     "babel-preset-react-app": "^9.1.2",
+    "cross-env": "^7.0.2",
     "rollup": "^2.26.8",
     "rollup-plugin-cleanup": "^3.1.1",
     "rollup-plugin-copy": "^3.3.0",
